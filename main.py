@@ -4,6 +4,12 @@ Date: Fri 21 Apr 2023 07:11:29
 Description: Generates and saves QR codes.
 """
 
+"""
+Author: Clayton King
+Date: Fri 21 Apr 2023 07:11:29
+Description: Generates and saves QR codes.
+"""
+
 import argparse
 import os
 from time import sleep
@@ -88,15 +94,15 @@ def save_file(qr_code, directory, file_name):
 
     if os.path.exists(directory):
         print("\nSaving file...")
+        try:
+            qr_code.save(file_path)
+        except OSError:
+                print("\nQR code failed to save. Please try again.")
+                exit(1)
         with alive_bar(total=100, bar='classic2', spinner='classic') as bar:
             bar(1, skipped=True)
             for _ in range(1, 100):
-                try:
-                    qr_code.save(file_path)
-                    bar(1)
-                except OSError:
-                    print("\nQR code failed to save. Please try again.")
-                    exit(1)
+                bar(1)
         print(f"\nQR code saved to: {file_path}")
 
     else:
