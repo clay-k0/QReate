@@ -4,12 +4,6 @@ Date: Fri 21 Apr 2023 07:11:29
 Description: Generates and saves QR codes.
 """
 
-"""
-Author: Clayton King
-Date: Fri 21 Apr 2023 07:11:29
-Description: Generates and saves QR codes.
-"""
-
 import argparse
 import os
 from time import sleep
