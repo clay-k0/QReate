@@ -15,11 +15,11 @@ You will also need to install the following packages:
 
 To install the packages, run the following commmand:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 or
 
-pip3 install -r requirements.txt
+`pip3 install -r requirements.txt`
 
 ## **Installing**
 
@@ -29,13 +29,13 @@ Run the script using the following command:
 
 **"python qr_code_generator.py <text> <directory> <file_name>"**
 
-**text**: The text or URL for the QR code.\
-**directory**: The directory to save the QR code.\
-**file_name**: The name of the QR code file.
+`<text>`: The text or URL for the QR code.\
+`<directory>`: The directory to save the QR code.\
+`<file_name>`: The name of the QR code file.
 
 For example:
 
-**python qr_code_generator.py https://example.com /path/to/directory/ example**
+`python qr_code_generator.py https://example.com /path/to/directory/ example`
 
 ## **Usage**
 
